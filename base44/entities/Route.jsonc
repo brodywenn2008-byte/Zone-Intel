@@ -1,0 +1,53 @@
+{
+  "name": "Route",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Route Name"
+    },
+    "territory_id": {
+      "type": "string",
+      "title": "Territory ID"
+    },
+    "rep_email": {
+      "type": "string",
+      "title": "Rep Email"
+    },
+    "lead_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Lead IDs (ordered)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "paused"
+      ],
+      "default": "active",
+      "title": "Status"
+    },
+    "total_stops": {
+      "type": "number",
+      "default": 0,
+      "title": "Total Stops"
+    },
+    "completed_stops": {
+      "type": "number",
+      "default": 0,
+      "title": "Completed Stops"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Route Date"
+    }
+  },
+  "required": [
+    "territory_id"
+  ]
+}

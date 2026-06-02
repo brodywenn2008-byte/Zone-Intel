@@ -1,0 +1,41 @@
+{
+  "name": "ActivityLog",
+  "type": "object",
+  "properties": {
+    "rep_email": {
+      "type": "string",
+      "title": "Rep Email"
+    },
+    "action": {
+      "type": "string",
+      "title": "Action"
+    },
+    "entity_type": {
+      "type": "string",
+      "title": "Entity Type"
+    },
+    "entity_id": {
+      "type": "string",
+      "title": "Entity ID"
+    },
+    "details": {
+      "type": "string",
+      "title": "Details"
+    },
+    "territory_id": {
+      "type": "string",
+      "title": "Territory ID"
+    },
+    "lat": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Longitude"
+    }
+  },
+  "required": [
+    "action"
+  ]
+}

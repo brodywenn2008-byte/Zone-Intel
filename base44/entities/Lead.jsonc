@@ -1,0 +1,114 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "lat": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Longitude"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "not_visited",
+        "knocked",
+        "interested",
+        "follow_up",
+        "appointment_set",
+        "sold",
+        "no_answer",
+        "not_interested"
+      ],
+      "default": "not_visited",
+      "title": "Visit Status"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "lead_score": {
+      "type": "number",
+      "title": "Lead Score",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "assigned_rep": {
+      "type": "string",
+      "title": "Assigned Rep Email"
+    },
+    "territory_id": {
+      "type": "string",
+      "title": "Territory ID"
+    },
+    "last_contact_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Last Contact Date"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Tags"
+    },
+    "owner_name": {
+      "type": "string",
+      "title": "Owner Name"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "is_homeowner": {
+      "type": "boolean",
+      "title": "Is Homeowner"
+    },
+    "home_value": {
+      "type": "number",
+      "title": "Estimated Home Value"
+    },
+    "appointment_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Appointment Date"
+    },
+    "follow_up_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Follow Up Date"
+    },
+    "visit_count": {
+      "type": "number",
+      "default": 0,
+      "title": "Visit Count"
+    },
+    "ai_priority": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "AI Priority"
+    },
+    "photo_url": {
+      "type": "string",
+      "title": "Photo URL"
+    }
+  },
+  "required": [
+    "address"
+  ]
+}

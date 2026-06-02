@@ -1,0 +1,48 @@
+{
+  "name": "Neighborhood",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Neighborhood Name"
+    },
+    "estimated_value": {
+      "type": "number",
+      "title": "Estimated Home Value"
+    },
+    "rank": {
+      "type": "number",
+      "title": "Rank"
+    },
+    "median_income": {
+      "type": "number",
+      "title": "Median Income"
+    },
+    "avg_home_age": {
+      "type": "number",
+      "title": "Average Home Age (years)"
+    },
+    "ownership_rate": {
+      "type": "number",
+      "title": "Ownership Rate (%)"
+    },
+    "market_trend": {
+      "type": "string",
+      "enum": [
+        "rising",
+        "stable",
+        "declining"
+      ],
+      "title": "Market Trend"
+    },
+    "zip_code": {
+      "type": "string",
+      "title": "ZIP Code"
+    }
+  },
+  "required": [
+    "name",
+    "estimated_value",
+    "rank"
+  ]
+}

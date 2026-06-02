@@ -1,0 +1,21 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user",
+        "pro"
+      ],
+      "default": "user",
+      "title": "Role"
+    },
+    "is_subscribed": {
+      "type": "boolean",
+      "default": false,
+      "title": "Pro Subscription Active"
+    }
+  }
+}

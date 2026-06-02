@@ -1,0 +1,70 @@
+{
+  "name": "Territory",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Territory Name"
+    },
+    "polygon": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
+      },
+      "title": "Boundary Polygon (lat/lng pairs)"
+    },
+    "center_lat": {
+      "type": "number",
+      "title": "Center Latitude"
+    },
+    "center_lng": {
+      "type": "number",
+      "title": "Center Longitude"
+    },
+    "assigned_reps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Assigned Rep Emails"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "paused"
+      ],
+      "default": "active",
+      "title": "Status"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "zip_code": {
+      "type": "string",
+      "title": "ZIP Code"
+    },
+    "total_homes": {
+      "type": "number",
+      "default": 0,
+      "title": "Total Homes"
+    },
+    "homes_visited": {
+      "type": "number",
+      "default": 0,
+      "title": "Homes Visited"
+    },
+    "color": {
+      "type": "string",
+      "title": "Color"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

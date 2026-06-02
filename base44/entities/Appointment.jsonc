@@ -1,0 +1,46 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "lead_id": {
+      "type": "string",
+      "title": "Lead ID"
+    },
+    "rep_email": {
+      "type": "string",
+      "title": "Rep Email"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Appointment Date"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "completed",
+        "cancelled",
+        "no_show"
+      ],
+      "default": "scheduled",
+      "title": "Status"
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "owner_name": {
+      "type": "string",
+      "title": "Owner Name"
+    }
+  },
+  "required": [
+    "lead_id",
+    "date"
+  ]
+}

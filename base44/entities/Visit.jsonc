@@ -1,0 +1,46 @@
+{
+  "name": "Visit",
+  "type": "object",
+  "properties": {
+    "lead_id": {
+      "type": "string",
+      "title": "Lead ID"
+    },
+    "rep_email": {
+      "type": "string",
+      "title": "Rep Email"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "knocked",
+        "interested",
+        "follow_up",
+        "appointment_set",
+        "sold",
+        "no_answer",
+        "not_interested"
+      ],
+      "title": "Outcome"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "lat": {
+      "type": "number",
+      "title": "Visit Latitude"
+    },
+    "lng": {
+      "type": "number",
+      "title": "Visit Longitude"
+    },
+    "duration_seconds": {
+      "type": "number",
+      "title": "Duration (seconds)"
+    }
+  },
+  "required": [
+    "lead_id"
+  ]
+}
